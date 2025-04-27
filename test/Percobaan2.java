@@ -1,25 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author MyBook Hype AMD
- */
 import java.util.Scanner;
 public class Percobaan2 {
    
 
-        public double luas_lingkaran(int diameter) {
-            int jari2 = diameter / 2;
-            double luas = Math.PI * Math.pow(jari2, 2);
-            return luas;
+            public double luas_lingkaran(int diameter) {
+                int jari2 = diameter / 2;
+                double luas = Math.PI * Math.pow(jari2, 2);
+                return luas;
         }
-        void luasBola(int diameter){
-            int jariJari = diameter / 2; 
-            double luas = 4 * Math.PI * Math.pow(jariJari, 2); 
-            System.out.println("Luas bola dengan diameter " + diameter + " adalah: " + luas);
+        void volumeBola(int diameter){
+            int jariJari = diameter / 2;
+            double volume = (4.0 / 3) * Math.PI * Math.pow(jariJari, 3);
+            System.out.println("Volume bola dengan diameter " + diameter + " adalah: " + volume);
         }
         public static void main(String[] args) {
             Percobaan2 mt = new Percobaan2();
@@ -30,7 +21,7 @@ public class Percobaan2 {
             System.out.print("Masukkan diameter bola: ");
             int diameter = input.nextInt();
             
-            mt.luasBola(diameter);
+            mt.volumeBola(diameter);
             
             input.close();
             System.exit(0);
