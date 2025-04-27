@@ -1,3 +1,5 @@
+package modul2_202457201062;
+
 import javax.swing.JOptionPane;
 
 public class Percobaan3 {

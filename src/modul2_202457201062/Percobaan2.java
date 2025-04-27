@@ -1,3 +1,5 @@
+package modul2_202457201062;
+
 import java.util.Scanner;
 public class Percobaan2 {
    
